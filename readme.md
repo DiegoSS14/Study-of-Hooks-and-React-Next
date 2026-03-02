@@ -17,28 +17,21 @@ Consulte os exemplos de implementação para entender melhor cada hook do React.
 ---
 
 
-## Setup e Instalação
-
-### Clonar o repositório
+## Setup e Execução
 
 ```bash
+# Clonar e instalar
 git clone <repository-url>
 cd hooks-inicial
-```
-
-### Instalar dependências
-
-```bash
 npm install
-```
 
-### Executar a aplicação
-
-```bash
+# Executar
 npm start
 ```
 
-A aplicação abrirá em `http://localhost:3000`
+**Com Docker:** `docker-compose -f devcontainer/docker-compose.yml up`
+
+Aplicação disponível em `http://localhost:3000`
 
 ---
 
