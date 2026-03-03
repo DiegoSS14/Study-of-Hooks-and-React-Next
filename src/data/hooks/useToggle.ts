@@ -7,7 +7,15 @@ export default function useToggle(value?: boolean) {
         setToggle(!toggle)
     }
 
-    const r: [boolean, () => void] = [toggle, activeToggle] 
+    function ativoTrue() {
+        setToggle(true)
+    }
+
+    function ativoFalse() {
+        setToggle(false)
+    }
+
+    const r: [boolean, () => void, () => void, () => void] = [toggle, activeToggle, ativoTrue, ativoFalse]
 
     return r
 }

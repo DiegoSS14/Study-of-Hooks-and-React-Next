@@ -26,6 +26,7 @@ export default function useTamanhoJanela() {
     }
 
     const dimensoes = {
+        xsm: entre(1, 640),
         sm: entre(640, 768),
         md: entre(768, 1024),
         lg: entre(1024, 1280),
