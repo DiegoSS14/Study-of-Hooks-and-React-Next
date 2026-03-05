@@ -13,7 +13,6 @@ export default function TamanhoJanela() {
                 sm:bg-zinc-400
                 md:bg-green-400
                 lg:bg-blue-600
-                xl:bg-yellow-400
                 xl:bg-orange-600
             `}>
                 <Display texto={tamanho} />

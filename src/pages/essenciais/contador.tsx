@@ -4,8 +4,10 @@ import Flex from "@/components/template/Flex";
 import Pagina from "@/components/template/Pagina";
 import { useState } from "react";
 import {IconMinus, IconPlus, IconTextDecrease} from '@tabler/icons-react'
+import useTema from "@/data/hooks/useTema";
 
 export default function Contador() {
+    const { corTema } = useTema()
     const [count, setCount] = useState(0)
 
     return(<Pagina>
@@ -13,7 +15,7 @@ export default function Contador() {
         <Flex>
             <Botao
                 icone={<IconMinus size={40}/>}
-                cor="bg-blue-600"
+                cor={`bg-${corTema}`}
                 onClick={() => setCount(count-1)}
                 />
             <Botao
@@ -23,7 +25,7 @@ export default function Contador() {
                 />
             <Botao
                 icone={<IconPlus size={40}/>}
-                cor="bg-blue-600"
+                cor={`bg-${corTema}`}
                 onClick={() => setCount(count+1)}
             />
         </Flex>

@@ -1,10 +1,12 @@
 import Botao from "@/components/template/Botao";
 import Pagina from "@/components/template/Pagina";
+import useTema from "@/data/hooks/useTema";
 import { useEffect, useState } from "react";
 
 export default function() {
     const [url, setUrl] = useState()
     const [action, setAction] = useState(0)
+    const { corTema } = useTema()
 
     function loadImage() {
         fetch("https://dog.ceo/api/breeds/image/random")
@@ -31,7 +33,7 @@ export default function() {
     return(
         <Pagina>
             <img src={url} alt="Foto de cachorro" />
-            <Botao texto="Renderizar novamente" onClick={() => {setAction(action+1)}}/>
+            <Botao cor={`bg-${corTema}`} texto="Renderizar novamente" onClick={() => {setAction(action+1)}}/>
         </Pagina>
     )
 }
