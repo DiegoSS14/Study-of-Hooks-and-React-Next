@@ -29,7 +29,7 @@ export default function () {
     let soma = number3 + number4
 
     return (
-        <Pagina titulo="Memoização" subtitulo="Exemplo de memoização">
+        <Pagina titulo="Memoizando elementos" subtitulo="Exemplo de memoização utilizando o hook useMemo">
             <Flex col center>
                 <Display texto={
                     <>

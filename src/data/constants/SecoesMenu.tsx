@@ -42,7 +42,8 @@ export const secoes: SecaoProps[] = [
             titulo: "Outros",
             aberta: true,
             itens: [
-                { titulo: 'Memoizacao', icone: <IconPin />, url: '/outros/memoizacao', tag: 'useMemo' },
+                { titulo: 'Memoizando elementos', icone: <IconPin />, url: '/outros/memoizacao', tag: 'useMemo' },
+                { titulo: 'Memoizando funções', icone: <IconPin />, url: '/outros/memoizacaoFuncao', tag: 'useCallback' },
             ],
         },
     ];

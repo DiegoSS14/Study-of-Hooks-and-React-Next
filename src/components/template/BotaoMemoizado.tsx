@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface BotaoProps {
 	icone?: any;
 	texto?: string;
@@ -8,7 +10,7 @@ export interface BotaoProps {
 	className?: string;
 }
 
-export default function Botao(props: BotaoProps) {
+function BotaoMemoizado(props: BotaoProps) {
 	console.log('render')
 	function tamanho() {
 		if (props.tamanho === "xs") return 9;
@@ -37,3 +39,5 @@ export default function Botao(props: BotaoProps) {
 		</button>
 	);
 }
+
+export default React.memo(BotaoMemoizado)
