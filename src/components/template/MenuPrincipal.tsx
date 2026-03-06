@@ -8,11 +8,17 @@ import MenuPrincipalItem from "./MenuPrincipalItem";
 import MenuPrincipalSecao from "./MenuPrincipalSecao";
 
 export default function MenuPrincipal() {
-    const { secoes, mini, toggleMini } = useMenu()
+    const { secoes, mini, toggleMini, alternarSecao } = useMenu()
 
     function renderizarSecoes() {
         return secoes.map((secao: SecaoProps) => (
-            <MenuPrincipalSecao key={secao.titulo} titulo={secao.titulo} mini={mini} aberta={secao.aberta}>
+            <MenuPrincipalSecao 
+                key={secao.titulo} 
+                titulo={secao.titulo} 
+                mini={mini} 
+                aberta={secao.aberta} 
+                onClick={()=>alternarSecao(secao)}
+            >
                 {renderizarItens(secao)}
             </MenuPrincipalSecao>
         ));
@@ -27,6 +33,7 @@ export default function MenuPrincipal() {
                 tag={item.tag}
                 url={item.url}
                 mini={mini}
+                selecionado={item.selecionado}
             />
         ));
     }

@@ -1,4 +1,4 @@
-import { IconAppWindow, IconLetterCase, IconLock, IconMathGreater, IconNumber, IconRefreshAlert, IconSettings, IconShoppingCart, IconUsers, IconWindow } from "@tabler/icons-react";
+import { IconAppWindow, IconLetterCase, IconLock, IconMathGreater, IconNumber, IconPin, IconRefreshAlert, IconSettings, IconShoppingCart, IconUsers, IconWindow } from "@tabler/icons-react";
 import { MenuItem } from "../models/MenuItem";
 
 export interface SecaoProps {
@@ -7,7 +7,7 @@ export interface SecaoProps {
     itens: MenuItem[]
 }
 
-export const secoes = [
+export const secoes: SecaoProps[] = [
         {
             titulo: "Essenciais",
             aberta: true,
@@ -36,6 +36,13 @@ export const secoes = [
             aberta: true,
             itens: [
                 { titulo: 'Loja', icone: <IconShoppingCart />, url: '/contexto/loja', tag: 'Context' },
+            ],
+        },
+        {
+            titulo: "Outros",
+            aberta: true,
+            itens: [
+                { titulo: 'Memoizacao', icone: <IconPin />, url: '/outros/memoizacao', tag: 'useMemo' },
             ],
         },
     ];
