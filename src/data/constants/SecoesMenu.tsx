@@ -1,4 +1,4 @@
-import { IconAppWindow, IconLetterCase, IconLock, IconMathGreater, IconNumber, IconPin, IconRefreshAlert, IconSettings, IconShoppingCart, IconUsers, IconWindow } from "@tabler/icons-react";
+import { IconAppWindow, IconForms, IconLetterCase, IconLock, IconMathGreater, IconNumber, IconPin, IconRefreshAlert, IconSettings, IconShoppingCart, IconUsers, IconWindow } from "@tabler/icons-react";
 import { MenuItem } from "../models/MenuItem";
 
 export interface SecaoProps {
@@ -44,6 +44,7 @@ export const secoes: SecaoProps[] = [
             itens: [
                 { titulo: 'Memoizando elementos', icone: <IconPin />, url: '/outros/memoizacao', tag: 'useMemo' },
                 { titulo: 'Memoizando funções', icone: <IconPin />, url: '/outros/memoizacaoFuncao', tag: 'useCallback' },
+                { titulo: 'Formulario imperative handle', icone: <IconForms />, url: '/outros/formularioImperativeHandle', tag: 'useImperativeHandle' },
             ],
         },
     ];
