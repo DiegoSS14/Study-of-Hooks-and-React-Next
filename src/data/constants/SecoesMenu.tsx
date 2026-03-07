@@ -1,4 +1,4 @@
-import { IconAppWindow, IconForms, IconLetterCase, IconLock, IconMathGreater, IconNumber, IconPin, IconRefreshAlert, IconSettings, IconShoppingCart, IconUsers, IconWindow } from "@tabler/icons-react";
+import { IconAppWindow, IconColorSwatch, IconForms, IconLetterCase, IconLock, IconMathGreater, IconNumber, IconPin, IconRefreshAlert, IconSettings, IconShoppingCart, IconTextColor, IconTextPlus, IconUsers, IconWindow } from "@tabler/icons-react";
 import { MenuItem } from "../models/MenuItem";
 
 export interface SecaoProps {
@@ -45,6 +45,8 @@ export const secoes: SecaoProps[] = [
                 { titulo: 'Memoizando elementos', icone: <IconPin />, url: '/outros/memoizacao', tag: 'useMemo' },
                 { titulo: 'Memoizando funções', icone: <IconPin />, url: '/outros/memoizacaoFuncao', tag: 'useCallback' },
                 { titulo: 'Formulario imperative handle', icone: <IconForms />, url: '/outros/formularioImperativeHandle', tag: 'useImperativeHandle' },
+                { titulo: 'Texto secreto', icone: <IconTextColor />, url: '/outros/texto', tag: 'useLayoutEffect' },
+                { titulo: 'Gerador de cor', icone: <IconColorSwatch />, url: '/outros/geradorDeCor', tag: 'useLayoutEffect' },
             ],
         },
     ];
