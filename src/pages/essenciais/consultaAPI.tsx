@@ -32,7 +32,7 @@ export default function() {
 
     return(
         <Pagina>
-            <img src={url} alt="Foto de cachorro" />
+            <img src={url} alt="Foto de cachorro" className="max-w-lg" />
             <Botao cor={`bg-${corTema}`} texto="Renderizar novamente" onClick={() => {setAction(action+1)}}/>
         </Pagina>
     )

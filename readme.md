@@ -1,6 +1,8 @@
 
 # React Hooks Study
 
+![React Hooks Project Demo](public/React-hooks.gif)
+
 Aplicação desenvolvida como objeto de estudo dos **Hooks do React**.
 
 ## Objetivo
