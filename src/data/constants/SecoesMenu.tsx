@@ -1,4 +1,4 @@
-import { IconAppWindow, IconColorSwatch, IconForms, IconLetterCase, IconLock, IconMathGreater, IconNumber, IconPin, IconRefreshAlert, IconSettings, IconShoppingCart, IconTextColor, IconTextPlus, IconUsers, IconWindow } from "@tabler/icons-react";
+import { IconAppWindow, IconColorSwatch, IconDatabase, IconDatabaseImport, IconForms, IconLetterCase, IconLock, IconMathGreater, IconNumber, IconPin, IconRefreshAlert, IconSettings, IconShoppingCart, IconTextColor, IconUsers, IconWindow } from "@tabler/icons-react";
 import { MenuItem } from "../models/MenuItem";
 
 export interface SecaoProps {
@@ -47,6 +47,10 @@ export const secoes: SecaoProps[] = [
                 { titulo: 'Formulario imperative handle', icone: <IconForms />, url: '/outros/formularioImperativeHandle', tag: 'useImperativeHandle' },
                 { titulo: 'Texto secreto', icone: <IconTextColor />, url: '/outros/texto', tag: 'useLayoutEffect' },
                 { titulo: 'Gerador de cor', icone: <IconColorSwatch />, url: '/outros/geradorDeCor', tag: 'useLayoutEffect' },
+                { titulo: 'Soma state', icone: <IconDatabase />, url: '/outros/somaState', tag: 'useState' },
+                { titulo: 'Soma reducer', icone: <IconDatabaseImport />, url: '/outros/somaReducer', tag: 'useReducer' },
+                { titulo: 'Formulário useId', icone: <IconForms />, url: '/outros/formularioId', tag: 'useId' },
+                { titulo: 'Formulário useId2', icone: <IconForms />, url: '/outros/formularioId2', tag: 'useId' },
             ],
         },
     ];
